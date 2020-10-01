@@ -6,7 +6,7 @@ Install vim and tmux along with configuration (see [.tmux.conf](.tmux.conf) and 
 
 * **docker_install.sh** : For docker container.
 
-Steps : 
+## Installation Steps : 
 
 * Run the above shell scripts.   
 
