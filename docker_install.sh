@@ -5,8 +5,8 @@ path=`echo ~`"/"
 echo -e "\e[32m[+] Installing tmux and vim  \e[0m"
 apt update -y
 apt install tmux -y 
-sudo apt install figlet 
-sudo apt install toilet   
+apt install figlet 
+apt install toilet   
 apt-get install -y software-properties-common
 rm -rf /var/lib/apt/lists/*
 add-apt-repository ppa:jonathonf/vim
