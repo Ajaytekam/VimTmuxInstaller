@@ -3,7 +3,10 @@
 path=`echo ~`"/" 
 # install vim8.2 and tmux
 echo -e "\e[32m[+] Installing tmux and vim  \e[0m"
+sudo apt update -y
 sudo apt install tmux -y 
+sudo apt install figlet 
+sudo apt install toilet   
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update -y
 sudo apt install vim -y

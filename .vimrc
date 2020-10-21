@@ -26,7 +26,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd BufNewFile *.md,*.json,*.vim,*.lua execute "silent! CocDisable" 
 """ Custom indentation configuration
 " for python
-autocmd BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent
+autocmd BufNewFile,BufRead *.py set tabstop=5 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent
+
+" system clipboard yanking
+vnoremap <C-y> :w !xclip -i -sel c<CR> 
 
 " TagList setup
 map <F3> : TlistToggle<CR>
@@ -54,6 +57,13 @@ let mapleader = "/"
 map <leader>t :below terminal<CR>
 map <leader>v :botright vertical terminal<CR>
 
+" makes Ascii border
+nmap <leader>1 :.!toilet -w 200 -f term -F border<CR>
+" makes Ascii art font
+nmap <leader>3 :.!toilet -w 200 -f standard<CR>
+nmap <leader>2 :.!toilet -w 200 -f small<CR>
+
+
 "####### Open markdown file on the browser
 " Function definition
 function! Vim_MD_Preview()
@@ -65,6 +75,7 @@ autocmd FileType markdown map <Leader>s :call Vim_MD_Preview()<CR>
 
 "####### UnSet the Line Number in vim
 map <Leader>n :exec("set number!")<CR>  
+map <Leader>r :exec("set rnu!")<CR>  
 
 " If running inside tmux session then set 'delek' theme
 if exists('$TMUX')
