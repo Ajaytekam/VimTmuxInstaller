@@ -16,10 +16,10 @@ chmod +x install.sh
 ```  
 
 * Open vim and run command `:PlugInstall` to install all plugins.  
-* Run the command `:CocInstall <language_server_name>` to install language server for coc.vim. Some of useful language servers are : coc-json, coc-css, coc-clangd, coc-html, coc-java, coc-python, coc-bash, coc-sql, coc-xml, coc-tsserver, coc-phpls. You can install them single or all of them by :   
+* Run the command `:CocInstall <language_server_name>` to install language server for coc.vim. Some of useful language servers are : coc-json, coc-css, coc-clangd, coc-html, coc-java, coc-python, coc-sh, coc-sql, coc-xml, coc-tsserver, coc-phpls. You can install them single or all of them by :   
 
 ```vim  
-:CocInstall coc-json coc-css coc-clangd coc-html coc-java coc-python coc-bash coc-sql coc-xml coc-tsserver coc-phpls  
+:CocInstall coc-json coc-css coc-clangd coc-html coc-java coc-python coc-sh coc-sql coc-xml coc-tsserver coc-phpls  
 ```  
 
 ![Image](sc.png)  
