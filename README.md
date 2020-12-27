@@ -12,7 +12,7 @@ Install vim and tmux along with configuration (see [.tmux.conf](.tmux.conf) and 
 
 ```shell  
 chmod +x install.sh  
-./install.sh
+sudo ./install.sh
 ```  
 
 * Open vim and run command `:PlugInstall` to install all plugins.  

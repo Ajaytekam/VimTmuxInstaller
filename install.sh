@@ -12,6 +12,9 @@ sudo apt update -y
 sudo apt install vim -y
 sudo apt install ctags
 
+## revoke sudo priviledge
+sudo -k 
+
 # create .vim if not exists  
 [ ! -d $path".vim" ] && mkdir $path".vim" 
 
@@ -23,7 +26,6 @@ cd $path".vim"
 echo -e "\e[32m[+] Extracting template files  \e[0m"
 tar -xvf templates.tar  
 rm templates.tar  
-
 
 # install plugin manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
