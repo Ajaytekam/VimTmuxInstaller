@@ -31,5 +31,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 # install nodejs for coc.vim 
 echo -e "\e[32m[+] Installing Node.js for COC.vim  \e[0m"
-curl -sL install-node.now.sh/lts | bash
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+sudo apt-get install -y nodejs
 echo -e "\e[32m[+] Installation Complete!\e[0m"
